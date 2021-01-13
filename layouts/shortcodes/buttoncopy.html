@@ -1,0 +1,28 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<a {{ with .Get "href"}} onclick="copyToClipboard({{.}})" {{ end }} class="btn btn-default">
+  {{ $icon := .Get "icon" }}
+  {{ $iconposition := .Get "icon-position" }}
+  {{ if ($icon) }}
+    {{ if or (not ($iconposition)) (eq $iconposition "left") }}
+  <i class="{{$icon}}"></i>
+    {{ end }}
+  {{ end }}
+  {{ .Inner }}
+  {{ if and ($icon) (eq $iconposition "right")}}
+  <i class="{{$icon}}"></i>
+  {{ end }}
+</a>
+
+<script>
+function copyToClipboard(var1){
+    var ip = "haagridserver.duckdns.org";
+    const selBox = document.createElement('textarea');
+    selBox.value = ip+":"+var1;
+    //Copy the value
+    document.body.appendChild(selBox);
+    //selBox.focus(); //Jumps to the end of the page if enabled
+    selBox.select();
+    document.execCommand('copy');
+    document.body.removeChild(selBox);
+}
+</script>

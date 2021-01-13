@@ -1,0 +1,32 @@
+baseURL = "http://0.0.0.0/"
+languageCode = "en-US"
+title = "Wikigrid"
+theme = "hugo-theme-learn"
+
+
+
+[params]
+  themeVariant = "green"
+  description = "The official wiki for the reddit /r/selfhosted community used as template"
+  titleseparator = " - "
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON"]
+
+
+[[menu.shortcuts]]
+  name = "<i class='fab fa-twitter'></i> My Twitter"
+  identifier = "ds"
+  url = "https://twitter.com/haagridtv"
+  weight = 10
+
+#[[menu.shortcuts]]
+#  name = "<i class='fas fa-camera'></i> Showcases"
+#  url = "/showcase"
+#  weight = 11
+
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Tags"
+url = "/tags"
+weight = 30

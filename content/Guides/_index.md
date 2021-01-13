@@ -1,7 +1,12 @@
 ---
 title: Guides
+weight: 2
+pre: "<i class='fas fa-info-circle'></i> "
+tags: ["guide", "how-to", "selfhost"]
 ---
+___
+### Maybe
 
-# Guides
+I might do something here eventually
 
-Find the link to your desired guide below! 
+{{% children depth="999" description="true" %}}

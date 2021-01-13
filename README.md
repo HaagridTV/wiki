@@ -9,14 +9,17 @@ mkdir /home/iptv/wiki
 
 git clone --recurse-submodules https://github.com/HaagridTV/wiki.git
 
-[comment]: If working on fresh site do this, if not skip.
+1.
 cp config.toml.example config.toml
 
 hugo server --bind=0.0.0.0
 
-[comment]: When done, run hugo to build site
+2. 
 hugo
 ```
+[comment]: 1. If working on fresh site do this, if not skip.
+[comment]: 2. When done, run hugo to build site
+
 
 Navigate your browser to `http://<machineIP>:1313` and you should see the site live on your local machine.
 

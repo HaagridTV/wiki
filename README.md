@@ -9,12 +9,12 @@ mkdir /home/iptv/wiki
 
 git clone --recurse-submodules https://github.com/HaagridTV/wiki.git
 
-[:comment:] if working on fresh site do this, if not skip.
+[comment]: If working on fresh site do this, if not skip.
 cp config.toml.example config.toml
 
 hugo server --bind=0.0.0.0
 
-[:comment:] When done, run hugo to build site
+[comment]: When done, run hugo to build site
 hugo
 ```
 
